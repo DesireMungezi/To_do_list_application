@@ -1,0 +1,51 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 370
+  ClientWidth = 292
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object textInput: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 32.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object headerLabel: TLabel
+    Position.X = 49.000000000000000000
+    Position.Y = 39.000000000000000000
+    Text = 'Task Manager'
+    TabOrder = 1
+  end
+  object addTasks: TButton
+    Position.X = 177.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'ADD'
+    OnClick = addTasksClick
+  end
+  object displayTask: TListBox
+    Position.X = 32.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 200.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = displayTaskItemClick
+    Viewport.Width = 221.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+end
